@@ -1,16 +1,6 @@
-# Jackson Module for Fugue
+# Mybatis Extension
 
-Jackson Module for [Fugue](https://bitbucket.org/atlassian/fugue)
-
-# How to use?
-
-
-
-`
- implementation 'com.lifecosys.base.jackson:fugue:4.7.2'
-`
-
-
+Add simple auto orm for mybatis, such as load depend bo, save depend bo an do discriminator for hierarchy bo.
 
 # License
 
