@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lifecosys.base.mybatis.bo.TestUserRoleMapper">
+
+
+    <resultMap id="resultMap" type="com.lifecosys.base.mybatis.bo.TestUserRole">
+        <association property="testUser" column="test_user_id" javaType="com.lifecosys.base.mybatis.bo.TestUser"
+                     select="com.lifecosys.base.mybatis.bo.TestUserMapper.selectById"/>
+        <association property="testRole" column="test_role_id" javaType="com.lifecosys.base.mybatis.bo.TestRole"
+                     select="com.lifecosys.base.mybatis.bo.TestRoleMapper.selectById"/>
+    </resultMap>
+
+    <select id="selectUserRoles" resultMap="resultMap">
+      select * from test_user_role where test_user_id= #{userId}
+    </select>
+
+</mapper>
