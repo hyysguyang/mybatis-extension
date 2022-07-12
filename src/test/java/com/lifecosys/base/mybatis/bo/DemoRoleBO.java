@@ -1,15 +1,17 @@
 package com.lifecosys.base.mybatis.bo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.lifecosys.base.mybatis.auto.simple.Bo;
 
 /**
  * @author <a href="mailto:hyysguyang@gmail.com">Young Gu</a>
  */
 @TableName("test_role")
-public class TestRole extends BaseBo {
+public class DemoRoleBO extends BaseBo implements Bo<DemoRoleBO> {
+
     private String name;
 
-    public TestRole(String id, String name) {
+    public DemoRoleBO(String id, String name) {
         super(id);
         this.name = name;
     }
@@ -30,4 +32,5 @@ public class TestRole extends BaseBo {
         sb.append('}');
         return sb.toString();
     }
+
 }

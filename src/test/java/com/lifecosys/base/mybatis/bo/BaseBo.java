@@ -1,4 +1,4 @@
-package com.lifecosys.base.mybatis;
+package com.lifecosys.base.mybatis.bo;
 
 import java.util.Objects;
 

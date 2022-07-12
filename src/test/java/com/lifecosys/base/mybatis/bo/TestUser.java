@@ -1,8 +1,7 @@
 package com.lifecosys.base.mybatis.bo;
 
-import com.baomidou.mybatisplus.annotations.TableField;
-import com.baomidou.mybatisplus.annotations.TableName;
-import com.lifecosys.base.mybatis.BaseBo;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
 
 import java.util.ArrayList;
 import java.util.List;
